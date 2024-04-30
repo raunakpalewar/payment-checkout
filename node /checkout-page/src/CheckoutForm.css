@@ -1,0 +1,133 @@
+html{
+  margin:0;
+  padding:0;
+}
+.payment-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  max-width: 100%;
+}
+
+.product-info {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 50px;
+}
+
+.product-info h2 {
+  margin-top: 0;
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  max-height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center center; 
+}
+
+.product-image:hover{
+  transform: scale(1.5); /* Zoom effect on hover */
+
+}
+
+.product-description {
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-weight: bold;
+}
+
+.payment-form {
+  width: 700px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-row {
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 35px;
+}
+
+input[type="text"],
+input[type="email"],
+.StripeElement {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.card-element {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.pay-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pay-button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+h1{
+  text-align: center;
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal-image {
+  max-width: 500px;
+  max-height: 500px;
+  margin: 10px;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
